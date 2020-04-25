@@ -28,7 +28,13 @@ public class StockCategory implements java.io.Serializable{
 
 	public StockCategory() {
 	}
-
+	/*The EmbeddedId annotation is applied to a persistent field or property of an entity class or mapped superclass to denote a 
+	composite primary key that is an embeddable class. 
+	The embeddable class must be annotated as Embeddable.
+	There must be only one EmbeddedId annotation and no Id annotation when the EmbeddedId annotation is used.
+	Note:  The EmbeddedId and and IdClass annotations are used to denote composite primary keys.
+	*/
+	
 	@EmbeddedId
 	public StockCategoryId getPk() {
 		return pk;
